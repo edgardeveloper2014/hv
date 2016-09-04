@@ -1,0 +1,79 @@
+doctype html
+html(lang='en')
+    head
+        block titulo
+             title Hv
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='description', content='description')
+        meta(name='keywords', content='keywords')
+        meta(name='author', content='author')
+        meta(name="robots", content="index, follow")
+
+        //- ----- link website ----- //
+        link(rel='icon' href='img/favicon.png' type='image/x-icon')
+
+        //- ----- CSS Files ----- //
+        link(href="css/icon.css", rel="stylesheet")
+        link(href="css/materialize.css", type="text/css", rel="stylesheet", media="screen,projection")
+        link(href="css/style.css", type="text/css", rel="stylesheet", media="screen,projection")
+        
+        
+    body
+      nav.light-blue.lighten-1(role="navigation")
+        .nav-wrapper.container
+          a.brand-logo(href='index.html', id="logo-container") 
+            img.img-65(src="img/logo-edeveloper.png", alt="edeveloper")
+          ul.right.hide-on-med-and-down
+              li 
+                a.class(href='index.html') Acerca
+              li 
+                a.class(href='portafolio.html') Portafolio
+              li 
+                a.class(href='certificacion.html') Certificación  
+                
+                
+          ul.side-nav#nav-mobile    
+              li 
+                a.class(href='index.html') Acerca
+              li 
+                a.class(href='portafolio.html') Portafolio
+              li 
+                a.class(href='certificacion.html') Certificación
+          a.button-collapse(href='#', data-activates="nav-mobile")
+              i.material-icons menu
+          
+      .section.no-pad-bot#index-banner
+            .container
+               block seccion_banner 
+      .container
+        .section
+            block dato_basico
+          
+          .section
+              block Estudios
+              
+          .section
+              block certificacion
+                                      
+          .section
+            block laboral
+            
+             
+                      
+          .section
+              block referencias
+            
+      footer.page-footer.teal
+        block footer
+            include footer.jade
+            
+        
+                            
+                            
+      script(type='text/javascript', src='js/jquery-2.1.1.min.js')
+      script(type='text/javascript', src='js/materialize.js')
+      script(type='text/javascript', src='js/init.js')
+      script(type='text/javascript', src='js/slider.js')
+                        
+                  

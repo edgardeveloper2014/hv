@@ -1,0 +1,22 @@
+h3.center.orange-text Experiencia Laboral
+table.bordered.centered.highlight
+    thead
+        tr
+           - each encabezado_empresa_dato in [ 'NOMBRE EMPRESA','CARGO','FUNCIONES','JEFE INMEDIATO','TELEFONO', 'TIEMPO LABORADO']
+                th= encabezado_empresa_dato
+    tbody
+        tr
+           - each dato_empresa1 in [ 'ITO SOFTWARE SAS','Desarrollador Junior','desarrollo , modificación, soporte de aplicaciones web con el framework php Symphony2.4 ','Jhonattan Alférez','2872961','Octubre 6 de 2014 - marzo 23 de 2015'  ]
+                td= dato_empresa1
+        tr      
+           - each dato_empresa2 in [ 'DSL DATA SOLUTIONS','Programador web','Desarrollo , modificación , soporte aplicaciones web realizadas por la empresa.','Genner Puello','6 78 85 21-317 430 4027','Julio 22 de 2013 - mayo 20 de 2014'  ]
+                td= dato_empresa2
+        tr      
+           - each dato_empresa3 in [ 'AGRAF LTDA','Programador web','Pasar Interfaz gráfica a HTML, programación de páginas web el chingon.co y agrafltda.com, adaptar esas páginas a móviles usando la tecnología responsive web design, manejo ftp, manejo de hosting, manejo del programa de edición de imagenes Photoshop.','Alexander Garzón','6 95 59 45-317 440 7599','Febrero 26 de 2013 – junio 3 de 2013' ]
+                td= dato_empresa3 
+        tr      
+           - each dato_empresa4 in [ 'ETHOS SOLUCIONES DE SOFTWARE','Ingeniero Aprendiz ','realizar documentación y soporte de aplicaciones web  de la empresa, desarrollos nuevos, manejo de motor de base de datos Oracle, creación de webservices con java.','Alejandra Amaya','2 44 01 33','Abril 2012 – julio 2012' ]
+                td= dato_empresa4                    
+        tr
+           - each dato_empresa5 in [ 'ALIMENAT E.U','auxiliar de producción','Empaque, etiquetado , pesaje de productos lacteos ,carnicos,panaderos.','Jarol Moreno','2 16 99 01','Octubre 2008 - marzo de 2009' ]
+                td= dato_empresa5

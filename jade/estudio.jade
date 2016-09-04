@@ -1,0 +1,19 @@
+h3.center.orange-text Estudios
+table.bordered.centered.highlight
+  thead
+    tr
+      - each encabezado in [ 'titulo','fecha','institución','dirección','lugar de estudio' ]
+          th= encabezado
+  tbody
+    tr
+      - each datoTecnologo in [ 'Tecnólogo en análisis y desarrollo de sistemas de información','2010 hasta 2011','Sena Centro de gestión de mercados, logística y tecnologías de la información','calle 52 13-65','Bogotá' ]
+          td= datoTecnologo
+    tr      
+      - each datoTecnico in [ 'Tecnico en procesamiento de frutas y hortalizas','2008 hasta 2009','Sena centro nacional de hoteleria,  turismo y alimentos','Calle 15 31-42','Bogotá' ]
+          td= datoTecnico
+    tr
+      - each datoBachiller in ['Bachiller Academico','1997 hasta 2003','Pablo Neruda','Calle 16f bis 102-70','Bogotá'  ]
+          td= datoBachiller       
+    tr      
+      - each datosPrimaria in [ 'primaria','1994 hasta 1997','Republica de finlandia','Carrera 72b 44-19sur','Bogotá' ]
+          td= datosPrimaria 

@@ -1,0 +1,39 @@
+extends layout.jade
+block titulo
+    title Portafolio Edgar Duarte
+block seccion_banner
+      .slider
+          ul.slides
+              li 
+                   img(src="img/slider/angular_bg1.png", alt="")
+                   .caption.center-align
+                       
+              li 
+                   img(src="img/slider/nodejs.png", alt="")
+                   .caption.center-align
+                    
+              li 
+                   img(src="img/slider/laravel_smolten_2.png", alt="")
+                   .caption.center-align
+                            
+block certificacion
+      .col.s12.m8.offset-m2.l6.offset-l3
+          .card-panel.grey.lighten-5.z-depth-1
+              .row.valign-wrapper
+                .col.s2
+                    img.responsive-img(src="img/portafolio/agraf_pagina.png", alt="")
+                .col.s10
+                    span.black-text  pagina creada para la empresa   
+                       a(href="http://agrafltda.com/", class="label-info",target="_blank") Agraf ltda
+         .card-panel.grey.lighten-5.z-depth-1
+                .row.valign-wrapper
+                     .col.s2
+                         img.responsive-img(src="img/portafolio/edgarduarte.png", alt="")
+                     .col.s10
+                           span.black-text  pagina desarrollada siguiendo un tutorial de responsive web design  con bextlan  
+                              a(href="http://edgarduarte18.260mb.org/", class="label-primary",target="_blank") http://edgarduarte18.260mb.org/
+                                
+
+                                                           
+                
+  

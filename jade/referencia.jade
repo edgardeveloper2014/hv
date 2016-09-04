@@ -1,0 +1,24 @@
+h3.center.orange-text REFERENCIAS FAMILIARES 
+table.bordered.centered.highlight
+  thead
+     tr
+        - each encabezado_referencia_familiar in [ 'NOMBRE','CARGO','EMPRESA','TELEFONO']
+                  th= encabezado_referencia_familiar
+  tbody
+            tr
+               - each dato_referencia_familiar1 in ['ANGIE VIVIANA PUENTES', 'Callcenter', 'CITIBANK', '3204190443-4703770'  ]
+                    td= dato_referencia_familiar1
+            
+                    
+            tr           
+               - each dato_referencia_familiar2 in [ 'HERNAN DIAZ ROA','funcionario ETB','ETB','3152577662-7385714'  ]
+                    td= dato_referencia_familiar2
+h3.center.orange-text REFERENCIAS PERSONALES                   
+table.bordered.centered.highlight
+            tr    
+                - each dato_referencia_personal1 in ['FRANKLIN MEDINA GUTIÉRREZ', 'Analista','Accenture Ltda','3208493553'  ]
+                     td= dato_referencia_personal1
+            tr
+                
+              - each dato_referencia_personal2 in ['VIVIANA PÉREZ ROA' ,'Ingeniera de sistemas','Instituto de medicina legal','2981710-3202901165'  ]
+                     td= dato_referencia_personal2  
